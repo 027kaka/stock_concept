@@ -1,3 +1,4 @@
+import subprocess
 import streamlit as st
 import pywencai
 import pandas as pd
@@ -318,5 +319,6 @@ def app():
 
 
 if __name__ == "__main__":
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
     st.set_page_config(layout="wide")
     app()
