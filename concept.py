@@ -1,3 +1,4 @@
+import sys
 import subprocess
 import streamlit as st
 import pywencai
